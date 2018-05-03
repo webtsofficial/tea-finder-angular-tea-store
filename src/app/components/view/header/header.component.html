@@ -1,9 +1,49 @@
 <header>
   <nav>
     <ul>
-      <li>
-        <a routerLink="/"><fa-icon [icon]="faHome"></fa-icon> Home</a>
+      <li class="mobile-nav spacer">
+        <span>spacer</span>
+      </li>
+      <li class="desktop-nav">
+        <a routerLink="/">
+          <fa-icon [icon]="faHome"></fa-icon> Home</a>
+      </li>
+      <li class="desktop-nav">
+        <a routerLink="/">
+          <fa-icon [icon]="faShopping"></fa-icon> Shop</a>
+      </li>
+      <li class="logo">
+        <a routerLink="/"></a>
+      </li>
+      <li class="desktop-nav">
+        <a routerLink="/">
+          <fa-icon [icon]="faFilter"></fa-icon> Filter</a>
+      </li>
+      <li class="desktop-nav">
+        <a routerLink="/">
+          <fa-icon [icon]="faNews"></fa-icon> Knowloge</a>
+      </li>
+      <li class="mobile-nav nav-icon">
+          <button class="hamburger hamburger--collapse" type="button" (click)="toggleMenu()" [ngClass]="{'is-active': menuOpen}">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+          </button>
       </li>
     </ul>
   </nav>
+  <aside [ngClass]="{'active': menuOpen}">
+      <a routerLink="/">
+          <fa-icon [icon]="faHome"></fa-icon> Home
+      </a>
+      <a routerLink="/">
+          <fa-icon [icon]="faShopping"></fa-icon> Shop
+      </a>
+      <a routerLink="/">
+          <fa-icon [icon]="faFilter"></fa-icon> Filter
+      </a>
+      <a routerLink="/">
+          <fa-icon [icon]="faNews"></fa-icon> Knowloge
+      </a>
+  </aside>
 </header>

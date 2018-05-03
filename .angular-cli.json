@@ -19,6 +19,9 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/normalize.css/normalize.css",
+        "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss",
+        "../node_modules/bootstrap/scss/bootstrap-grid.scss",
         "styles.scss"
       ],
       "scripts": [],

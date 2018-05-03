@@ -1,2 +1,137 @@
 @import "../../../../styles/variables";
 @import "../../../../styles/mixins";
+$hamburger-layer-color: #F5F4EF;
+
+header {
+  height: 6rem;
+  background-color: $color-black;
+
+  nav {
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: block;
+        float: left;
+        width: 20%;
+        @include clearfix();
+
+        &.logo {
+          width: 60%;
+
+          a {
+            height: 6rem;
+            background-image: url(../../../../assets/logo/logo.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: auto 30%;
+          }
+        }
+        &.spacer {
+          span {
+            visibility: hidden;
+          }
+        }
+        &.nav-icon {
+          text-align: right;
+
+          button.hamburger {
+            &:focus {
+              outline:0;
+            }
+            .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+              background-color: $color-white;
+            }
+          }
+        }
+
+        a {
+          display: block;
+          width: 100%;
+          max-height: 6rem;
+          padding: 2.15rem;
+          font-family: $font-roboto-slab;
+          font-size: 1.6rem;
+          font-weight: 500;
+          text-decoration: none;
+          color: $color-white;
+          text-align: center;
+          @include transition(all 0.3s ease-in-out);
+
+          &:hover, &.active {
+            color: $color-brand-green;
+          }
+          &.active {
+            background-color: lighten($color-black, 10%);
+          }
+        }
+      }
+    }
+  }
+  aside {
+    display: block;
+    width: 300px;
+    height: 95vh;
+    position: fixed;
+    background-color: $color-black;
+    right: 0;
+    top: 6rem;
+    @include translate(320px, 0);
+    @include transition(transform 0.5s ease-in-out);
+
+    &.active {
+      @include translate(0, 0);
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 1.5rem 2rem;
+      text-decoration: none;
+      font-family: $font-roboto-slab;
+      font-weight: 600;
+      font-size: 2rem;
+      color: $color-white;
+      @include transition(color 0.3s ease-in-out);
+
+      &:hover {
+        color: $color-brand-green;
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  display: block !important;
+
+  &.spacer {
+    display: block;
+    width: 20%;
+  }
+}
+.desktop-nav {
+  display: none !important;
+}
+
+@include mobile() {
+
+}
+@include tablet() {
+
+}
+@include desktop() {
+  header > nav > ul > li.logo {
+    width: 20%;
+  }
+  .mobile-nav {
+    display: none !important;
+  }
+  .desktop-nav {
+    display: block !important;
+  }
+}
+@include desktopHD() {
+
+}
