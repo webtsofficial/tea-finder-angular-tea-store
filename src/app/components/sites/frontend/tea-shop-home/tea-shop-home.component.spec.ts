@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TeaShopHomeComponent } from './tea-shop-home.component';
+import {NguCarouselModule} from '@ngu/carousel';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 describe('TeaShopHomeComponent', () => {
   let component: TeaShopHomeComponent;
@@ -8,7 +10,13 @@ describe('TeaShopHomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TeaShopHomeComponent ]
+      declarations: [
+          TeaShopHomeComponent
+      ],
+      imports: [
+          NguCarouselModule,
+          FontAwesomeModule
+      ]
     })
     .compileComponents();
   }));

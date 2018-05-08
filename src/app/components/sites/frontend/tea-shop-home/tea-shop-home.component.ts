@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NguCarousel } from '@ngu/carousel';
 
-import {faCaretLeft} from "@fortawesome/free-solid-svg-icons/faCaretLeft";
-import {faCaretRight} from "@fortawesome/free-solid-svg-icons/faCaretRight";
+import {faCaretLeft} from '@fortawesome/free-solid-svg-icons/faCaretLeft';
+import {faCaretRight} from '@fortawesome/free-solid-svg-icons/faCaretRight';
 
 @Component({
   selector: 'app-tea-shop-home',
@@ -21,7 +21,7 @@ export class TeaShopHomeComponent implements OnInit {
       this.introCarousel = {
           grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
           slide: 1,
-          speed: 400,
+          speed: 600,
           interval: 4000,
           point: {
               visible: true
@@ -30,7 +30,7 @@ export class TeaShopHomeComponent implements OnInit {
           touch: true,
           loop: true,
           custom: 'banner'
-      }
+      };
   }
 
   public introCarouselFunc(event: Event) {
