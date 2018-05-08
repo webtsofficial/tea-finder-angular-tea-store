@@ -60,11 +60,14 @@ header {
           text-align: center;
           @include transition(all 0.3s ease-in-out);
 
+          &:hover {
+            background-color: $color-black !important;
+          }
           &:hover, &.active {
             color: $color-brand-green;
           }
-          &.active {
-            background-color: lighten($color-black, 10%);
+          &.active:hover {
+            background-color: $color-dark-grey !important;
           }
         }
       }

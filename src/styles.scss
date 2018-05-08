@@ -33,6 +33,10 @@ h6 {
   font-size: 1.8rem;
 }
 
+.slider-col {
+  padding: 0;
+}
+
 @include mobile() {
   html, body {
     font-size: 10.5px;

@@ -1,0 +1,24 @@
+// Intro carousel
+#intro-carousel {
+  ngu-item {
+    div {
+      display: block;
+      width: 100%;
+      height: 30rem;
+    }
+  }
+  .leftRs, .rightRs {
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+    position: absolute;
+    top: 12rem;
+    font-size: 3rem;
+  }
+  .leftRs {
+    left: 0;
+  }
+  .rightRs {
+    right: 0;
+  }
+}

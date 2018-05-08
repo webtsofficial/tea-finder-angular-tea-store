@@ -1,3 +1,25 @@
-<p>
-  tea-shop-home works!
-</p>
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-12 slider-col">
+            <ngu-carousel [inputs]="introCarousel" (carouselLoad)="introCarouselFunc($event)" id="intro-carousel">
+                <ngu-item NguCarouselItem>
+                    <div>
+                        1
+                    </div>
+                </ngu-item>
+                <ngu-item NguCarouselItem>
+                    <div>
+                        2
+                    </div>
+                </ngu-item>
+                <ngu-item NguCarouselItem>
+                    <div>
+                        3
+                    </div>
+                </ngu-item>
+                <div NguCarouselPrev class='leftRs'><fa-icon [icon]="faCaretLeft" [size]="'2x'"></fa-icon></div>
+                <div NguCarouselNext class='rightRs'><fa-icon [icon]="faCaretRight" [size]="'2x'"></fa-icon></div>
+            </ngu-carousel>
+        </div>
+    </div>
+</section>
