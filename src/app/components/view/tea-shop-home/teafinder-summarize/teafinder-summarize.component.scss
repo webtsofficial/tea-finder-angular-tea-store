@@ -1,0 +1,36 @@
+@import "../../../../../styles/variables";
+@import "../../../../../styles/mixins";
+
+section {
+  padding: 5rem 0;
+
+  div {
+    text-align: center;
+
+    &:nth-child(1) {
+      fa-icon {
+        color: $color-warning;
+      }
+    }
+    &:nth-child(2) {
+      fa-icon {
+        color: $color-brand-blue;
+      }
+    }
+    &:nth-child(3) {
+      fa-icon {
+        color: $color-brand-green;
+      }
+    }
+
+    h2 {
+      margin: 1rem 0 0.5rem 0;
+    }
+    p {
+      display: inline-block;
+      max-width: 320px;
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+  }
+}

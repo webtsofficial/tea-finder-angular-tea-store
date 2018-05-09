@@ -12,7 +12,7 @@ import {TeaShopHomeComponent} from './components/sites/frontend/tea-shop-home/te
 import {HeaderComponent} from './components/view/header/header.component';
 import {FooterComponent} from './components/view/footer/footer.component';
 import {NguCarouselModule} from '@ngu/carousel';
-import { TeafinderSummarizeComponent } from './components/views/tea-shop-home/teafinder-summarize/teafinder-summarize.component';
+import { TeafinderSummarizeComponent } from './components/view/tea-shop-home/teafinder-summarize/teafinder-summarize.component';
 
 
 @NgModule({
