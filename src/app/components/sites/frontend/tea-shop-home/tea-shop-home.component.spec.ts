@@ -5,6 +5,7 @@ import {NguCarouselModule} from '@ngu/carousel';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {TeafinderSummarizeComponent} from '../../../view/tea-shop-home/teafinder-summarize/teafinder-summarize.component';
 import {OffersCarouselComponent} from '../../../general/carousels/offers-carousel/offers-carousel.component';
+import {IntroCarouselComponent} from '../../../general/carousels/intro-carousel/intro-carousel.component';
 
 describe('TeaShopHomeComponent', () => {
   let component: TeaShopHomeComponent;
@@ -15,11 +16,10 @@ describe('TeaShopHomeComponent', () => {
       declarations: [
           TeaShopHomeComponent,
           TeafinderSummarizeComponent,
-          OffersCarouselComponent
+          OffersCarouselComponent,
+          IntroCarouselComponent
       ],
       imports: [
-          NguCarouselModule,
-          FontAwesomeModule
       ]
     })
     .compileComponents();

@@ -1,8 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {
+    Component,
+    Input,
+    OnInit
+} from '@angular/core';
 import {NguCarousel} from '@ngu/carousel';
 import {faPercent} from '@fortawesome/free-solid-svg-icons/faPercent';
 import {faCaretLeft} from '@fortawesome/free-solid-svg-icons/faCaretLeft';
 import {faCaretRight} from '@fortawesome/free-solid-svg-icons/faCaretRight';
+import {Tea} from '../../../../models/Tea/Tea';
 
 @Component({
   selector: 'app-offers-carousel',
@@ -10,6 +15,8 @@ import {faCaretRight} from '@fortawesome/free-solid-svg-icons/faCaretRight';
   styleUrls: ['./offers-carousel.component.scss']
 })
 export class OffersCarouselComponent implements OnInit {
+    @Input() offerTeas: Tea[];
+
     public offerCarousel: NguCarousel;
     faCaretLeft = faCaretLeft;
     faCaretRight = faCaretRight;
@@ -32,5 +39,9 @@ export class OffersCarouselComponent implements OnInit {
           custom: 'banner'
       };
   }
+
+    public offersCarouselFunc(event: Event) {
+
+    }
 
 }

@@ -1,0 +1,81 @@
+@import "../../../../../styles/variables";
+@import "../../../../../styles/mixins";
+
+// Intro carousel
+#intro-carousel {
+  ngu-item {
+    div {
+      display: block;
+      width: 100%;
+      height: 25rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      @include box-shadow(inset 0 0 16px $color-shadow-dark);
+    }
+
+    &:nth-child(1) {
+      div {
+        background-image: url('../../../../../assets/slider/home/slide1.jpg');
+      }
+    }
+    &:nth-child(2) {
+      div {
+        background-image: url('../../../../../assets/slider/home/slide2.jpg');
+      }
+    }
+    &:nth-child(3) {
+      div {
+        background-image: url('../../../../../assets/slider/home/slide3.jpg');
+      }
+    }
+  }
+  .leftRs, .rightRs {
+    cursor: pointer;
+    display: block;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 10rem;
+    color: $color-white;
+  }
+  .leftRs {
+    left: 0;
+  }
+  .rightRs {
+    right: 0;
+  }
+}
+
+@include mobile() {
+
+}
+@include tablet() {
+  #intro-carousel {
+    ngu-item {
+      div {
+        height: 30rem;
+      }
+    }
+    .leftRs, .rightRs {
+      top: 11rem;
+    }
+  }
+  .leftRs, .rightRs {
+    top: 11.5rem;
+  }
+}
+@include desktop() {
+  #intro-carousel {
+    ngu-item {
+      div {
+        height: 35rem;
+      }
+    }
+    .leftRs, .rightRs {
+      top: 14rem;
+    }
+  }
+}
+@include desktopHD() {
+
+}

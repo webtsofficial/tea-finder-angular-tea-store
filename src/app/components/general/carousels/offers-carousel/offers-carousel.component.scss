@@ -19,10 +19,11 @@
     width: 5.5rem;
     height: 5.5rem;
     padding: 2rem;
+    margin: 0 0.5rem;
     position:relative;
     top: -15rem;
     color: $color-black;
-    background-color: $color-white;
+    background-color: #fff;
     border-radius: 50rem;
     @include box-shadow(0 2px 12px $color-shadow-light);
     @include transition(background-color 0.3s ease-in-out);

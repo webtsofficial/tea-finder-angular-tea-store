@@ -14,6 +14,7 @@ import {FooterComponent} from './components/view/footer/footer.component';
 import {NguCarouselModule} from '@ngu/carousel';
 import { TeafinderSummarizeComponent } from './components/view/tea-shop-home/teafinder-summarize/teafinder-summarize.component';
 import { OffersCarouselComponent } from './components/general/carousels/offers-carousel/offers-carousel.component';
+import { IntroCarouselComponent } from './components/general/carousels/intro-carousel/intro-carousel.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { OffersCarouselComponent } from './components/general/carousels/offers-c
         HeaderComponent,
         FooterComponent,
         TeafinderSummarizeComponent,
-        OffersCarouselComponent
+        OffersCarouselComponent,
+        IntroCarouselComponent
     ],
     imports: [
         BrowserModule,

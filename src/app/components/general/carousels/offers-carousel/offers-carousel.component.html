@@ -1,40 +1,10 @@
 <h1 class="text-center">
   <fa-icon [icon]="faPercent" [size]="'2x'"></fa-icon> Current Offers
 </h1>
-<ngu-carousel [inputs]="offerCarousel" (carouselLoad)="introCarouselFunc($event)" id="offer-carousel">
-  <ngu-item NguCarouselItem>
+<ngu-carousel [inputs]="offerCarousel" (carouselLoad)="offersCarouselFunc($event)" id="offer-carousel" *ngIf="offerTeas">
+  <ngu-item NguCarouselItem *ngFor="let offerTea of offerTeas">
     <div>
-
-    </div>
-  </ngu-item>
-  <ngu-item NguCarouselItem>
-    <div>
-
-    </div>
-  </ngu-item>
-  <ngu-item NguCarouselItem>
-    <div>
-
-    </div>
-  </ngu-item>
-  <ngu-item NguCarouselItem>
-    <div>
-
-    </div>
-  </ngu-item>
-  <ngu-item NguCarouselItem>
-    <div>
-
-    </div>
-  </ngu-item>
-  <ngu-item NguCarouselItem>
-    <div>
-
-    </div>
-  </ngu-item>
-  <ngu-item NguCarouselItem>
-    <div>
-
+      {{offerTea.name}}
     </div>
   </ngu-item>
 
