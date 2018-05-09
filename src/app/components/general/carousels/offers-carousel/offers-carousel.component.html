@@ -3,9 +3,7 @@
 </h1>
 <ngu-carousel [inputs]="offerCarousel" (carouselLoad)="offersCarouselFunc($event)" id="offer-carousel" *ngIf="offerTeas">
   <ngu-item NguCarouselItem *ngFor="let offerTea of offerTeas">
-    <div>
-      {{offerTea.name}}
-    </div>
+    <app-tea-overview-card></app-tea-overview-card>
   </ngu-item>
 
   <div NguCarouselPrev class='leftRs'><fa-icon [icon]="faCaretLeft"></fa-icon></div>
