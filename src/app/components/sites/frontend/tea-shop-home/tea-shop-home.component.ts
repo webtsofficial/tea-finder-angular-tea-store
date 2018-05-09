@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NguCarousel } from '@ngu/carousel';
+import {faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
+import {faChevronRight} from '@fortawesome/free-solid-svg-icons/faChevronRight';
 
-import {faCaretLeft} from '@fortawesome/free-solid-svg-icons/faCaretLeft';
-import {faCaretRight} from '@fortawesome/free-solid-svg-icons/faCaretRight';
 
 @Component({
   selector: 'app-tea-shop-home',
@@ -12,8 +12,8 @@ import {faCaretRight} from '@fortawesome/free-solid-svg-icons/faCaretRight';
 export class TeaShopHomeComponent implements OnInit {
 
   public introCarousel: NguCarousel;
-  faCaretLeft = faCaretLeft;
-  faCaretRight = faCaretRight;
+    faChevronLeft = faChevronLeft;
+    faChevronRight = faChevronRight;
 
   constructor() { }
 

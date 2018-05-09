@@ -4,6 +4,7 @@ import { TeaShopHomeComponent } from './tea-shop-home.component';
 import {NguCarouselModule} from '@ngu/carousel';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {TeafinderSummarizeComponent} from '../../../view/tea-shop-home/teafinder-summarize/teafinder-summarize.component';
+import {OffersCarouselComponent} from '../../../general/carousels/offers-carousel/offers-carousel.component';
 
 describe('TeaShopHomeComponent', () => {
   let component: TeaShopHomeComponent;
@@ -13,7 +14,8 @@ describe('TeaShopHomeComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
           TeaShopHomeComponent,
-          TeafinderSummarizeComponent
+          TeafinderSummarizeComponent,
+          OffersCarouselComponent
       ],
       imports: [
           NguCarouselModule,

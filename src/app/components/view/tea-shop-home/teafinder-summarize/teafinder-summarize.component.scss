@@ -7,6 +7,16 @@ section {
   div {
     text-align: center;
 
+    div {
+      display: inline-block;
+      max-width: 320px;
+      padding: 3rem;
+      margin: 2rem 0;
+      background-color: #fff;
+      @include box-shadow(0 2px 16px $color-shadow-light);
+      @include border-radius(0.5rem);
+    }
+
     &:nth-child(1) {
       fa-icon {
         color: $color-warning;
