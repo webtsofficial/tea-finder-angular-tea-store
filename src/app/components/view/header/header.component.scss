@@ -81,6 +81,7 @@ header {
     background-color: $color-black;
     right: 0;
     top: 6rem;
+    z-index: 9999;
     @include translate(320px, 0);
     @include transition(transform 0.5s ease-in-out);
 
