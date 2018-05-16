@@ -15,3 +15,4 @@ export class Globals {
         headers: new HttpHeaders().delete('Content-Type'),
         withCredentials: true
     };
+}

@@ -11,6 +11,7 @@ export class TeaShopHomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

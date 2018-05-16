@@ -1,3 +1,16 @@
-<p>
-  tea-overview-card works!
-</p>
+<section class="tea-overview-card">
+  <div class="tea-image-box">
+    <img [alt]="offerTea.images[0].title" [src]="offerTea.images[0]['thumbnail-url']"/>
+  </div>
+  <div class="container-fluid tea-info-box">
+    <div class="row">
+      <div class="col-8">
+        <h2>{{offerTea.name}}</h2>
+        <h4>{{offerTea.sort.name}}</h4>
+      </div>
+      <div class="col-4">
+        <h3>{{offerTea.price}}€ / 100g</h3>
+      </div>
+    </div>
+  </div>
+</section>

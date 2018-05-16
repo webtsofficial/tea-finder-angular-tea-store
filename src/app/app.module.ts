@@ -29,6 +29,13 @@ import {
     HashLocationStrategy,
     LocationStrategy
 } from '@angular/common';
+import {TeaService} from './services/teas/tea/tea.service';
+import {TeaSortService} from './services/teas/tea-sort/tea-sort.service';
+import {TeaImageService} from './services/teas/tea-image/tea-image.service';
+import {TeaCharacteristicService} from './services/teas/tea-characteristic/tea-characteristic.service';
+import {TeaAromaService} from './services/teas/tea-aroma/tea-aroma.service';
+import {TeaTastesService} from './services/teas/tea-tastes/tea-tastes.service';
+import {Globals} from './globals/Globals';
 
 
 @NgModule({
@@ -64,6 +71,13 @@ import {
             provide: LocationStrategy,
             useClass: HashLocationStrategy
         },
+        TeaService,
+        TeaSortService,
+        TeaImageService,
+        TeaCharacteristicService,
+        TeaAromaService,
+        TeaTastesService,
+        Globals
     ],
     bootstrap: [AppComponent]
 })
